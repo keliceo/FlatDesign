@@ -1,0 +1,83 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+using KeLi.FlatDesign.WinForm.UI;
+
+namespace KeLi.FlatDesign.WinForm.Example1
+{
+    public partial class LoginFrm : Form
+    {
+        public LoginFrm()
+        {
+            InitializeComponent();
+        }
+
+        private void LoginFrm_MouseDown(object sender, MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+
+            if (e.Button == MouseButtons.Left)
+                Handle.MoveWindow();
+        }
+
+        private void PnlLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+
+            if (e.Button == MouseButtons.Left)
+                Handle.MoveWindow();
+        }
+
+        private void PbMin_Click(object sender, System.EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void PbClose_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void LinkForgetPwd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+        }
+
+        private void TxtUserName_Enter(object sender, System.EventArgs e)
+        {
+            if (txtUserName.Text == txtUserName.Tag.ToString())
+            {
+                txtUserName.Text = string.Empty;
+                txtUserName.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void TxtUserName_Leave(object sender, System.EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtUserName.Text))
+            {
+                txtUserName.Text = txtUserName.Tag.ToString();
+                txtUserName.ForeColor = Color.Silver;
+            }
+        }
+
+        private void TxtPwd_Enter(object sender, System.EventArgs e)
+        {
+            if (txtPwd.Text == txtPwd.Tag.ToString())
+            {
+                txtPwd.Text = string.Empty;
+                txtPwd.ForeColor = Color.LightGray;
+                txtPwd.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void TxtPwd_Leave(object sender, System.EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPwd.Text))
+            {
+                txtPwd.Text = txtPwd.Tag.ToString();
+                txtPwd.ForeColor = Color.Silver;
+                txtPwd.UseSystemPasswordChar = false;
+            }
+        }
+    }
+}
