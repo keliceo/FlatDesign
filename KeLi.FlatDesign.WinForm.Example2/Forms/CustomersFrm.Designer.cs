@@ -233,12 +233,6 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
             this.Controls.Add(this.dgvCustomer);
             this.Name = "CustomersFrm";
             this.Load += new System.EventHandler(this.CustomersFrm_Load);
-            this.Controls.SetChildIndex(this.dgvCustomer, 0);
-            this.Controls.SetChildIndex(this.btnDelete, 0);
-            this.Controls.SetChildIndex(this.btnEdit, 0);
-            this.Controls.SetChildIndex(this.btnView, 0);
-            this.Controls.SetChildIndex(this.btnInsert, 0);
-            this.Controls.SetChildIndex(this.lblList, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

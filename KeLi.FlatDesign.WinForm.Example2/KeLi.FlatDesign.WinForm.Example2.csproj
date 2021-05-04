@@ -95,6 +95,21 @@
     <EmbeddedResource Include="Forms\CustomersFrm.resx">
       <DependentUpon>CustomersFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardFrm.resx">
+      <DependentUpon>DashboardFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DevicesFrm.resx">
+      <DependentUpon>DevicesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MembershipFrm.resx">
+      <DependentUpon>MembershipFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlansFrm.resx">
+      <DependentUpon>PlansFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersFrm.resx">
+      <DependentUpon>UsersFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>

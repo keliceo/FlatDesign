@@ -32,6 +32,22 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pnlUser = new System.Windows.Forms.Panel();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.pnlContent = new System.Windows.Forms.Panel();
+            this.lblDefaultTxt = new System.Windows.Forms.Label();
+            this.tmrTime = new System.Windows.Forms.Timer(this.components);
+            this.tmrExpandMenu = new System.Windows.Forms.Timer(this.components);
+            this.tmrCollapseMenu = new System.Windows.Forms.Timer(this.components);
+            this.pnlMembershipMenu = new System.Windows.Forms.Panel();
+            this.pbContentLogo = new System.Windows.Forms.PictureBox();
+            this.pbUser = new System.Windows.Forms.PictureBox();
+            this.btnMembershipItem1 = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnDevices = new System.Windows.Forms.Button();
@@ -39,36 +55,26 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMembership = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.pnlTitle = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
             this.btnMin = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlUser = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.pbUser = new System.Windows.Forms.PictureBox();
-            this.pnlContent = new System.Windows.Forms.Panel();
-            this.lblDefaultTxt = new System.Windows.Forms.Label();
-            this.pbContentLogo = new System.Windows.Forms.PictureBox();
-            this.tmrTime = new System.Windows.Forms.Timer(this.components);
-            this.tmrExpandMenu = new System.Windows.Forms.Timer(this.components);
-            this.tmrCollapseMenu = new System.Windows.Forms.Timer(this.components);
+            this.btnMembershipItem2 = new System.Windows.Forms.Button();
+            this.btnMembershipItem3 = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             this.pnlContent.SuspendLayout();
+            this.pnlMembershipMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbContentLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.pnlMenu.Controls.Add(this.pnlMembershipMenu);
             this.pnlMenu.Controls.Add(this.btnMenu);
             this.pnlMenu.Controls.Add(this.btnUsers);
             this.pnlMenu.Controls.Add(this.btnDevices);
@@ -79,9 +85,184 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 43);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(230, 457);
+            this.pnlMenu.Size = new System.Drawing.Size(230, 757);
             this.pnlMenu.TabIndex = 0;
             this.pnlMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlMenu_MouseDown);
+            // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.pnlTitle.Controls.Add(this.btnClose);
+            this.pnlTitle.Controls.Add(this.btnMax);
+            this.pnlTitle.Controls.Add(this.btnMin);
+            this.pnlTitle.Controls.Add(this.lblTitle);
+            this.pnlTitle.Controls.Add(this.pictureBox1);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(900, 43);
+            this.pnlTitle.TabIndex = 1;
+            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlTitle_MouseDown);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(43, 13);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(88, 16);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "ISP SYSTEM";
+            // 
+            // pnlUser
+            // 
+            this.pnlUser.Controls.Add(this.lblTime);
+            this.pnlUser.Controls.Add(this.lblDate);
+            this.pnlUser.Controls.Add(this.lblAddress);
+            this.pnlUser.Controls.Add(this.lblName);
+            this.pnlUser.Controls.Add(this.pbUser);
+            this.pnlUser.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlUser.Location = new System.Drawing.Point(230, 700);
+            this.pnlUser.Name = "pnlUser";
+            this.pnlUser.Size = new System.Drawing.Size(670, 100);
+            this.pnlUser.TabIndex = 2;
+            this.pnlUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlUser_MouseDown);
+            // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.LightGray;
+            this.lblTime.Location = new System.Drawing.Point(422, 8);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(215, 60);
+            this.lblTime.TabIndex = 5;
+            this.lblTime.Text = "21:49:45";
+            // 
+            // lblDate
+            // 
+            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(430, 74);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(236, 21);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "Lunes, 26 de septiembre 2018";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.White;
+            this.lblAddress.Location = new System.Drawing.Point(93, 39);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(59, 16);
+            this.lblAddress.TabIndex = 1;
+            this.lblAddress.Text = "Address";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(93, 19);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(45, 16);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Name";
+            // 
+            // pnlContent
+            // 
+            this.pnlContent.Controls.Add(this.lblDefaultTxt);
+            this.pnlContent.Controls.Add(this.pbContentLogo);
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(230, 43);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(670, 657);
+            this.pnlContent.TabIndex = 3;
+            this.pnlContent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlContent_MouseDown);
+            // 
+            // lblDefaultTxt
+            // 
+            this.lblDefaultTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDefaultTxt.AutoSize = true;
+            this.lblDefaultTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDefaultTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDefaultTxt.Location = new System.Drawing.Point(182, 397);
+            this.lblDefaultTxt.Name = "lblDefaultTxt";
+            this.lblDefaultTxt.Size = new System.Drawing.Size(325, 39);
+            this.lblDefaultTxt.TabIndex = 3;
+            this.lblDefaultTxt.Text = "KELI Code Advance";
+            // 
+            // tmrTime
+            // 
+            this.tmrTime.Enabled = true;
+            this.tmrTime.Interval = 1;
+            this.tmrTime.Tick += new System.EventHandler(this.TmrTime_Tick);
+            // 
+            // tmrExpandMenu
+            // 
+            this.tmrExpandMenu.Interval = 10;
+            this.tmrExpandMenu.Tick += new System.EventHandler(this.TmrExpandMenu_Tick);
+            // 
+            // tmrCollapseMenu
+            // 
+            this.tmrCollapseMenu.Interval = 10;
+            this.tmrCollapseMenu.Tick += new System.EventHandler(this.TmrCollapseMenu_Tick);
+            // 
+            // pnlMembershipMenu
+            // 
+            this.pnlMembershipMenu.Controls.Add(this.btnMembershipItem3);
+            this.pnlMembershipMenu.Controls.Add(this.btnMembershipItem2);
+            this.pnlMembershipMenu.Controls.Add(this.btnMembershipItem1);
+            this.pnlMembershipMenu.Location = new System.Drawing.Point(1, 200);
+            this.pnlMembershipMenu.Name = "pnlMembershipMenu";
+            this.pnlMembershipMenu.Size = new System.Drawing.Size(226, 140);
+            this.pnlMembershipMenu.TabIndex = 3;
+            // 
+            // pbContentLogo
+            // 
+            this.pbContentLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbContentLogo.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Default;
+            this.pbContentLogo.Location = new System.Drawing.Point(232, 245);
+            this.pbContentLogo.Name = "pbContentLogo";
+            this.pbContentLogo.Size = new System.Drawing.Size(225, 146);
+            this.pbContentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbContentLogo.TabIndex = 2;
+            this.pbContentLogo.TabStop = false;
+            // 
+            // pbUser
+            // 
+            this.pbUser.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Profile2;
+            this.pbUser.Location = new System.Drawing.Point(21, 19);
+            this.pbUser.Name = "pbUser";
+            this.pbUser.Size = new System.Drawing.Size(65, 65);
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUser.TabIndex = 0;
+            this.pbUser.TabStop = false;
+            // 
+            // btnMembershipItem1
+            // 
+            this.btnMembershipItem1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMembershipItem1.FlatAppearance.BorderSize = 0;
+            this.btnMembershipItem1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnMembershipItem1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnMembershipItem1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembershipItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembershipItem1.ForeColor = System.Drawing.Color.Silver;
+            this.btnMembershipItem1.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Membership;
+            this.btnMembershipItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMembershipItem1.Location = new System.Drawing.Point(26, 3);
+            this.btnMembershipItem1.Name = "btnMembershipItem1";
+            this.btnMembershipItem1.Size = new System.Drawing.Size(196, 40);
+            this.btnMembershipItem1.TabIndex = 4;
+            this.btnMembershipItem1.Text = "Item1";
+            this.btnMembershipItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMembershipItem1.UseVisualStyleBackColor = true;
             // 
             // btnMenu
             // 
@@ -109,7 +290,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnUsers.ForeColor = System.Drawing.Color.Silver;
             this.btnUsers.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.User;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(1, 293);
+            this.btnUsers.Location = new System.Drawing.Point(1, 437);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(226, 40);
             this.btnUsers.TabIndex = 0;
@@ -129,7 +310,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnDevices.ForeColor = System.Drawing.Color.Silver;
             this.btnDevices.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Devices;
             this.btnDevices.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevices.Location = new System.Drawing.Point(1, 247);
+            this.btnDevices.Location = new System.Drawing.Point(1, 391);
             this.btnDevices.Name = "btnDevices";
             this.btnDevices.Size = new System.Drawing.Size(226, 40);
             this.btnDevices.TabIndex = 0;
@@ -149,7 +330,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnPlans.ForeColor = System.Drawing.Color.Silver;
             this.btnPlans.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Planes;
             this.btnPlans.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlans.Location = new System.Drawing.Point(1, 201);
+            this.btnPlans.Location = new System.Drawing.Point(1, 345);
             this.btnPlans.Name = "btnPlans";
             this.btnPlans.Size = new System.Drawing.Size(226, 40);
             this.btnPlans.TabIndex = 0;
@@ -218,21 +399,6 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
             // 
-            // pnlTitle
-            // 
-            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.pnlTitle.Controls.Add(this.btnClose);
-            this.pnlTitle.Controls.Add(this.btnMax);
-            this.pnlTitle.Controls.Add(this.btnMin);
-            this.pnlTitle.Controls.Add(this.lblTitle);
-            this.pnlTitle.Controls.Add(this.pictureBox1);
-            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(900, 43);
-            this.pnlTitle.TabIndex = 1;
-            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlTitle_MouseDown);
-            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -278,17 +444,6 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.BtnMin_Click);
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(43, 13);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(88, 16);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "ISP SYSTEM";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.SatelliteDish1;
@@ -299,132 +454,50 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pnlUser
+            // btnMembershipItem2
             // 
-            this.pnlUser.Controls.Add(this.lblTime);
-            this.pnlUser.Controls.Add(this.lblDate);
-            this.pnlUser.Controls.Add(this.lblAddress);
-            this.pnlUser.Controls.Add(this.lblName);
-            this.pnlUser.Controls.Add(this.pbUser);
-            this.pnlUser.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUser.Location = new System.Drawing.Point(230, 400);
-            this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(670, 100);
-            this.pnlUser.TabIndex = 2;
-            this.pnlUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlUser_MouseDown);
+            this.btnMembershipItem2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMembershipItem2.FlatAppearance.BorderSize = 0;
+            this.btnMembershipItem2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnMembershipItem2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnMembershipItem2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembershipItem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembershipItem2.ForeColor = System.Drawing.Color.Silver;
+            this.btnMembershipItem2.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Membership;
+            this.btnMembershipItem2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMembershipItem2.Location = new System.Drawing.Point(28, 49);
+            this.btnMembershipItem2.Name = "btnMembershipItem2";
+            this.btnMembershipItem2.Size = new System.Drawing.Size(196, 40);
+            this.btnMembershipItem2.TabIndex = 4;
+            this.btnMembershipItem2.Text = "Item2";
+            this.btnMembershipItem2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMembershipItem2.UseVisualStyleBackColor = true;
             // 
-            // lblTime
+            // btnMembershipItem3
             // 
-            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.LightGray;
-            this.lblTime.Location = new System.Drawing.Point(422, 8);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(215, 60);
-            this.lblTime.TabIndex = 5;
-            this.lblTime.Text = "21:49:45";
-            // 
-            // lblDate
-            // 
-            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(430, 74);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(236, 21);
-            this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "Lunes, 26 de septiembre 2018";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(93, 39);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(59, 16);
-            this.lblAddress.TabIndex = 1;
-            this.lblAddress.Text = "Address";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(93, 19);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(45, 16);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Name";
-            // 
-            // pbUser
-            // 
-            this.pbUser.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Profile2;
-            this.pbUser.Location = new System.Drawing.Point(21, 19);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(65, 65);
-            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUser.TabIndex = 0;
-            this.pbUser.TabStop = false;
-            // 
-            // pnlContent
-            // 
-            this.pnlContent.Controls.Add(this.lblDefaultTxt);
-            this.pnlContent.Controls.Add(this.pbContentLogo);
-            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(230, 43);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(670, 357);
-            this.pnlContent.TabIndex = 3;
-            this.pnlContent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlContent_MouseDown);
-            // 
-            // lblDefaultTxt
-            // 
-            this.lblDefaultTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDefaultTxt.AutoSize = true;
-            this.lblDefaultTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDefaultTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblDefaultTxt.Location = new System.Drawing.Point(182, 247);
-            this.lblDefaultTxt.Name = "lblDefaultTxt";
-            this.lblDefaultTxt.Size = new System.Drawing.Size(325, 39);
-            this.lblDefaultTxt.TabIndex = 3;
-            this.lblDefaultTxt.Text = "KELI Code Advance";
-            // 
-            // pbContentLogo
-            // 
-            this.pbContentLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbContentLogo.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Default;
-            this.pbContentLogo.Location = new System.Drawing.Point(232, 95);
-            this.pbContentLogo.Name = "pbContentLogo";
-            this.pbContentLogo.Size = new System.Drawing.Size(225, 146);
-            this.pbContentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbContentLogo.TabIndex = 2;
-            this.pbContentLogo.TabStop = false;
-            // 
-            // tmrTime
-            // 
-            this.tmrTime.Enabled = true;
-            this.tmrTime.Interval = 1;
-            this.tmrTime.Tick += new System.EventHandler(this.TmrTime_Tick);
-            // 
-            // tmrExpandMenu
-            // 
-            this.tmrExpandMenu.Interval = 10;
-            this.tmrExpandMenu.Tick += new System.EventHandler(this.TmrExpandMenu_Tick);
-            // 
-            // tmrCollapseMenu
-            // 
-            this.tmrCollapseMenu.Interval = 10;
-            this.tmrCollapseMenu.Tick += new System.EventHandler(this.TmrCollapseMenu_Tick);
+            this.btnMembershipItem3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMembershipItem3.FlatAppearance.BorderSize = 0;
+            this.btnMembershipItem3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnMembershipItem3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnMembershipItem3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembershipItem3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMembershipItem3.ForeColor = System.Drawing.Color.Silver;
+            this.btnMembershipItem3.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Membership;
+            this.btnMembershipItem3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMembershipItem3.Location = new System.Drawing.Point(28, 95);
+            this.btnMembershipItem3.Name = "btnMembershipItem3";
+            this.btnMembershipItem3.Size = new System.Drawing.Size(196, 40);
+            this.btnMembershipItem3.TabIndex = 4;
+            this.btnMembershipItem3.Text = "Item3";
+            this.btnMembershipItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMembershipItem3.UseVisualStyleBackColor = true;
             // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(900, 500);
+            this.ClientSize = new System.Drawing.Size(900, 800);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlUser);
             this.Controls.Add(this.pnlMenu);
@@ -439,13 +512,14 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlMenu.ResumeLayout(false);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlUser.ResumeLayout(false);
             this.pnlUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             this.pnlContent.ResumeLayout(false);
             this.pnlContent.PerformLayout();
+            this.pnlMembershipMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbContentLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,6 +552,10 @@ namespace KeLi.FlatDesign.WinForm.Example2
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMax;
         private System.Windows.Forms.Button btnMin;
+        private System.Windows.Forms.Panel pnlMembershipMenu;
+        private System.Windows.Forms.Button btnMembershipItem1;
+        private System.Windows.Forms.Button btnMembershipItem3;
+        private System.Windows.Forms.Button btnMembershipItem2;
     }
 }
 

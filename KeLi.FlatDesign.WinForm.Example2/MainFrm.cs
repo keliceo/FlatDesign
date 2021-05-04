@@ -63,9 +63,21 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void BtnMembership_Click(object sender, EventArgs e)
         {
-            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
+            if (pnlMembershipMenu.Visible)
+            {
+                pnlMembershipMenu.Visible = false;
+                btnPlans.Location = new Point(btnPlans.Location.X, btnPlans.Location.Y - pnlMembershipMenu.Size.Height);
+                btnDevices.Location = new Point(btnDevices.Location.X, btnDevices.Location.Y - pnlMembershipMenu.Size.Height);
+                btnUsers.Location = new Point(btnUsers.Location.X, btnUsers.Location.Y - pnlMembershipMenu.Size.Height);
+            }
 
-            new MembershipFrm(pnlContent).Show();
+            else
+            {
+                pnlMembershipMenu.Visible = true;
+                btnPlans.Location = new Point(btnPlans.Location.X, btnPlans.Location.Y + pnlMembershipMenu.Size.Height);
+                btnDevices.Location = new Point(btnDevices.Location.X, btnDevices.Location.Y + pnlMembershipMenu.Size.Height);
+                btnUsers.Location = new Point(btnUsers.Location.X, btnUsers.Location.Y + pnlMembershipMenu.Size.Height);
+            }
         }
 
         private void BtnPlans_Click(object sender, EventArgs e)
@@ -122,10 +134,20 @@ namespace KeLi.FlatDesign.WinForm.Example2
         private void BtnMenu_Click(object sender, EventArgs e)
         {
             if (pnlMenu.Width == 230)
+            {
                 tmrCollapseMenu.Start();
 
+                if (pnlMembershipMenu.Visible)
+                    btnMembership.PerformClick();
+            }
+            
             else if (pnlMenu.Width == 55)
+            {
                 tmrExpandMenu.Start();
+                
+                if(!pnlMembershipMenu.Visible)
+                    btnMembership.PerformClick();
+            }
         }
 
         private void TmrTime_Tick(object sender, EventArgs e)
