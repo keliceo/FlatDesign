@@ -14,7 +14,6 @@ namespace KeLi.FlatDesign.WinForm.Example2
         public MainFrm()
         {
             InitializeComponent();
-
         }
 
         private void PnlMenu_MouseDown(object sender, MouseEventArgs e)
@@ -57,7 +56,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
             for (var i = 0; i <= 10; i++)
             {
-                frm.UpdateProgress(1000 * i); 
+                frm.UpdateProgress(1000 * i);
                 Thread.Sleep(1000);
             }
 
@@ -94,6 +93,12 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void BtnPlans_Click(object sender, EventArgs e)
         {
+            var frm = new MessageBoxFrm("Do you start a plan?");
+            var dlg = frm.ShowDialog();
+
+            if (dlg == DialogResult.Cancel)
+                return;
+
             pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
 
             new PlansFrm(pnlContent).Show();
@@ -152,12 +157,12 @@ namespace KeLi.FlatDesign.WinForm.Example2
                 if (pnlMembershipMenu.Visible)
                     btnMembership.PerformClick();
             }
-            
+
             else if (pnlMenu.Width == 55)
             {
                 tmrExpandMenu.Start();
-                
-                if(!pnlMembershipMenu.Visible)
+
+                if (!pnlMembershipMenu.Visible)
                     btnMembership.PerformClick();
             }
         }

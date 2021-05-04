@@ -49,6 +49,12 @@
     <Compile Include="BaseFrm.Designer.cs">
       <DependentUpon>BaseFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxFrm.Designer.cs">
+      <DependentUpon>MessageBoxFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProgressBarFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="BaseFrm.resx">
       <DependentUpon>BaseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxFrm.resx">
+      <DependentUpon>MessageBoxFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgressBarFrm.resx">
       <DependentUpon>ProgressBarFrm.cs</DependentUpon>
