@@ -30,6 +30,7 @@ namespace KeLi.FlatDesign.WinForm.Example1
         private void InitializeComponent()
         {
             this.pnlLogo = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.scShape = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lsPwd = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lsUserName = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -40,11 +41,10 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.labTitlt = new System.Windows.Forms.Label();
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.pbMin = new System.Windows.Forms.PictureBox();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogo
@@ -57,6 +57,16 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.pnlLogo.Size = new System.Drawing.Size(250, 330);
             this.pnlLogo.TabIndex = 0;
             this.pnlLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlLeft_MouseDown);
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Image = global::KeLi.FlatDesign.WinForm.Example1.Properties.Resources.Logo;
+            this.pbLogo.Location = new System.Drawing.Point(45, 80);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(154, 150);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
             // scShape
             // 
@@ -183,16 +193,6 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.pbMin.TabStop = false;
             this.pbMin.Click += new System.EventHandler(this.PbMin_Click);
             // 
-            // pbLogo
-            // 
-            this.pbLogo.Image = global::KeLi.FlatDesign.WinForm.Example1.Properties.Resources.Logo;
-            this.pbLogo.Location = new System.Drawing.Point(45, 80);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(154, 150);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
-            // 
             // LoginFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,9 +216,9 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LoginFrm_MouseDown);
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -40,6 +40,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMax = new System.Windows.Forms.Button();
+            this.btnMin = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlUser = new System.Windows.Forms.Panel();
@@ -54,9 +57,6 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             this.tmrExpandMenu = new System.Windows.Forms.Timer(this.components);
             this.tmrCollapseMenu = new System.Windows.Forms.Timer(this.components);
-            this.btnMin = new System.Windows.Forms.Button();
-            this.btnMax = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,6 +86,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // btnMenu
             // 
             this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.ForeColor = System.Drawing.Color.Silver;
@@ -99,6 +100,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // btnUsers
             // 
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsers.FlatAppearance.BorderSize = 0;
             this.btnUsers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -118,6 +120,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // btnDevices
             // 
+            this.btnDevices.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDevices.FlatAppearance.BorderSize = 0;
             this.btnDevices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnDevices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -137,6 +140,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // btnPlans
             // 
+            this.btnPlans.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlans.FlatAppearance.BorderSize = 0;
             this.btnPlans.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnPlans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -156,6 +160,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // btnMembership
             // 
+            this.btnMembership.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMembership.FlatAppearance.BorderSize = 0;
             this.btnMembership.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnMembership.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -175,6 +180,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // btnCustomers
             // 
+            this.btnCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCustomers.FlatAppearance.BorderSize = 0;
             this.btnCustomers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnCustomers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -194,6 +200,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // btnDashboard
             // 
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -225,6 +232,51 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlTitle.Size = new System.Drawing.Size(900, 43);
             this.pnlTitle.TabIndex = 1;
             this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlTitle_MouseDown);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.Silver;
+            this.btnClose.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Close;
+            this.btnClose.Location = new System.Drawing.Point(863, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(32, 32);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // btnMax
+            // 
+            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMax.FlatAppearance.BorderSize = 0;
+            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMax.ForeColor = System.Drawing.Color.Silver;
+            this.btnMax.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Maximize2;
+            this.btnMax.Location = new System.Drawing.Point(825, 5);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.Size = new System.Drawing.Size(32, 32);
+            this.btnMax.TabIndex = 2;
+            this.btnMax.UseVisualStyleBackColor = true;
+            this.btnMax.Click += new System.EventHandler(this.BtnMax_Click);
+            // 
+            // btnMin
+            // 
+            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.Color.Silver;
+            this.btnMin.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Minimize1;
+            this.btnMin.Location = new System.Drawing.Point(787, 5);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(32, 32);
+            this.btnMin.TabIndex = 2;
+            this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.BtnMin_Click);
             // 
             // lblTitle
             // 
@@ -354,60 +406,18 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // tmrTime
             // 
             this.tmrTime.Enabled = true;
-            this.tmrTime.Interval = 1000;
+            this.tmrTime.Interval = 1;
             this.tmrTime.Tick += new System.EventHandler(this.TmrTime_Tick);
             // 
             // tmrExpandMenu
             // 
-            this.tmrExpandMenu.Interval = 15;
+            this.tmrExpandMenu.Interval = 10;
             this.tmrExpandMenu.Tick += new System.EventHandler(this.TmrExpandMenu_Tick);
             // 
             // tmrCollapseMenu
             // 
-            this.tmrCollapseMenu.Interval = 15;
+            this.tmrCollapseMenu.Interval = 10;
             this.tmrCollapseMenu.Tick += new System.EventHandler(this.TmrCollapseMenu_Tick);
-            // 
-            // btnMin
-            // 
-            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMin.FlatAppearance.BorderSize = 0;
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.ForeColor = System.Drawing.Color.Silver;
-            this.btnMin.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Minimize1;
-            this.btnMin.Location = new System.Drawing.Point(787, 5);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(32, 32);
-            this.btnMin.TabIndex = 2;
-            this.btnMin.UseVisualStyleBackColor = true;
-            this.btnMin.Click += new System.EventHandler(this.BtnMin_Click);
-            // 
-            // btnMax
-            // 
-            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMax.FlatAppearance.BorderSize = 0;
-            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMax.ForeColor = System.Drawing.Color.Silver;
-            this.btnMax.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Maximize2;
-            this.btnMax.Location = new System.Drawing.Point(825, 5);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(32, 32);
-            this.btnMax.TabIndex = 2;
-            this.btnMax.UseVisualStyleBackColor = true;
-            this.btnMax.Click += new System.EventHandler(this.BtnMax_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.Silver;
-            this.btnClose.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Close;
-            this.btnClose.Location = new System.Drawing.Point(863, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 32);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // MainFrm
             // 
