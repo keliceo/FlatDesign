@@ -36,5 +36,12 @@ namespace KeLi.FlatDesign.WinForm.UI
 
             return new Size(rect.Width, rect.Height);
         }
+
+        public static Size GetFullScreenSize()
+        {
+            var rect = Screen.PrimaryScreen.Bounds;
+
+            return new Size(rect.Width, rect.Height);
+        }
     }
 }
