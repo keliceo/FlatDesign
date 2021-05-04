@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace KeLi.FlatDesign.WinForm.UI
@@ -20,6 +22,19 @@ namespace KeLi.FlatDesign.WinForm.UI
 
             else
                 control.FindForm()?.Handle.SendMessage(WM_NCLBUTTONDOWN, HTCAPTION, 0);
+        }
+
+        public static Size GetWorkingAreaSize(this Control control)
+        {
+            if (control is null)
+                throw new ArgumentNullException(nameof(control));
+
+            if (control.IsDisposed)
+                throw new InvalidDataException(nameof(control));
+
+            var rect = Screen.GetWorkingArea(control);
+
+            return new Size(rect.Width, rect.Height);
         }
     }
 }

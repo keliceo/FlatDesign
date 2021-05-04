@@ -431,7 +431,6 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.Controls.Add(this.pnlTitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1500, 800);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 500);
             this.Name = "MainFrm";

@@ -16,5 +16,8 @@ namespace KeLi.FlatDesign.WinForm.UI
 
         [DllImport("user32.dll")]
         public static extern int SendMessage(this IntPtr hWnd, int msg, int wParam, int lParam);
+
+        [DllImport("user32.dll", EntryPoint = "ShowWindow", CharSet = CharSet.Auto)]
+        public static extern int ShowWindow(this IntPtr hwnd, int nCmdShow);
     }
 }

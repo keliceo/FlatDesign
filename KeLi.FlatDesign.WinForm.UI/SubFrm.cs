@@ -2,7 +2,7 @@
 
 namespace KeLi.FlatDesign.WinForm.UI
 {
-    public abstract partial class SubFrm : Form
+    public partial class SubFrm : Form
     {
         protected SubFrm()
         {

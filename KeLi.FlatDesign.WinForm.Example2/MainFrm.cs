@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -95,7 +96,22 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void BtnMax_Click(object sender, EventArgs e)
         {
-            Size = Size == MaximumSize ? MinimumSize : MaximumSize;
+            var maxSize = this.GetWorkingAreaSize();
+
+            if (Size == maxSize)
+            {
+                Size = MinimumSize;
+                
+                var spaceSize = new Size(maxSize.Width-MinimumSize.Width, maxSize.Height - MinimumSize.Height);
+
+                Location = new Point(spaceSize.Width/2, spaceSize.Height / 2);
+            }
+
+            else
+            {
+                Size = maxSize;
+                Location = new Point();
+            }
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
