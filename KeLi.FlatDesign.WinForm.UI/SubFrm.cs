@@ -1,17 +1,16 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace KeLi.FlatDesign.WinForm.UI
 {
-    public partial class SubFrm : Form
+    public abstract partial class SubFrm : Form
     {
-        public SubFrm()
+        protected SubFrm()
         {
             InitializeComponent();
         }
 
-        public SubFrm(Panel parent) : this()
-        {
+        protected SubFrm(Panel parent) : this()
+        { 
             // ReSharper disable once VirtualMemberCallInConstructor
             Dock = DockStyle.Fill;
 
@@ -19,11 +18,6 @@ namespace KeLi.FlatDesign.WinForm.UI
             Parent = parent;
 
             BringToFront();
-        }
-
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
