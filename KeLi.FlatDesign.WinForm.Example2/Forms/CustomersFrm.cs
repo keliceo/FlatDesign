@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Windows.Forms;
 
 using KeLi.FlatDesign.WinForm.Example2.Utils;
 using KeLi.FlatDesign.WinForm.UI;
 
 namespace KeLi.FlatDesign.WinForm.Example2.Forms
 {
-    public partial class CustomersFrm : BaseFrm
+    public partial class CustomersFrm : SubFrm
     {
-        public CustomersFrm()
+        public CustomersFrm(Panel pnl) : base(pnl)
         {
             InitializeComponent();
         }
@@ -16,13 +17,6 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
         {
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.DataSource = CustomerUtil.GetCustomerModels();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            (ParentForm as MainFrm)?.ShowDefaultContent(true);
-
-            Close();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 using KeLi.FlatDesign.WinForm.Example2.Forms;
@@ -47,41 +48,44 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void BtnDashboard_Click(object sender, EventArgs e)
         {
-            ShowDefaultContent(false);
+            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
+
+            new DashboardFrm(pnlContent).Show();
         }
 
         private void BtnCustomers_Click(object sender, EventArgs e)
         {
-            var frm = new CustomersFrm
-            {
-                TopLevel = false,
-                Dock = DockStyle.Fill,
-                Parent = pnlContent
-            };
+            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
 
-            frm.BringToFront();
-            
-            frm.Show();
+            new CustomersFrm(pnlContent).Show();
         }
 
         private void BtnMembership_Click(object sender, EventArgs e)
         {
-            ShowDefaultContent(false);
+            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
+
+            new MembershipFrm(pnlContent).Show();
         }
 
         private void BtnPlans_Click(object sender, EventArgs e)
         {
-            ShowDefaultContent(false);
+            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
+
+            new PlansFrm(pnlContent).Show();
         }
 
         private void BtnDevices_Click(object sender, EventArgs e)
         {
-            ShowDefaultContent(false);
+            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
+
+            new DevicesFrm(pnlContent).Show();
         }
 
         private void BtnUsers_Click(object sender, EventArgs e)
         {
-            ShowDefaultContent(false);
+            pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
+
+            new UsersFrm(pnlContent).Show();
         }
 
         private void BtnMin_Click(object sender, EventArgs e)

@@ -1,7 +1,7 @@
 ﻿
 namespace KeLi.FlatDesign.WinForm.Example2.Forms
 {
-    partial class CustomersFrm
+    sealed partial class CustomersFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,6 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblList = new System.Windows.Forms.Label();
             this.btnView = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,26 +220,11 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
             this.btnView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnView.UseVisualStyleBackColor = false;
             // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Close;
-            this.btnClose.Location = new System.Drawing.Point(758, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 32);
-            this.btnClose.TabIndex = 12;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // CustomersFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblList);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnView);
@@ -249,6 +233,12 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
             this.Controls.Add(this.dgvCustomer);
             this.Name = "CustomersFrm";
             this.Load += new System.EventHandler(this.CustomersFrm_Load);
+            this.Controls.SetChildIndex(this.dgvCustomer, 0);
+            this.Controls.SetChildIndex(this.btnDelete, 0);
+            this.Controls.SetChildIndex(this.btnEdit, 0);
+            this.Controls.SetChildIndex(this.btnView, 0);
+            this.Controls.SetChildIndex(this.btnInsert, 0);
+            this.Controls.SetChildIndex(this.lblList, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -267,6 +257,5 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.Button btnClose;
     }
 }
