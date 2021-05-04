@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 using KeLi.FlatDesign.WinForm.UI;
@@ -28,12 +29,12 @@ namespace KeLi.FlatDesign.WinForm.Example1
                 Handle.MoveWindow();
         }
 
-        private void PbMin_Click(object sender, System.EventArgs e)
+        private void PbMin_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void PbClose_Click(object sender, System.EventArgs e)
+        private void PbClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -42,16 +43,16 @@ namespace KeLi.FlatDesign.WinForm.Example1
         {
         }
 
-        private void TxtUserName_Enter(object sender, System.EventArgs e)
+        private void TxtUserName_Enter(object sender, EventArgs e)
         {
             if (txtUserName.Text == txtUserName.Tag.ToString())
             {
                 txtUserName.Text = string.Empty;
-                txtUserName.ForeColor = Color.LightGray;
+                txtUserName.ForeColor = Color.White;
             }
         }
 
-        private void TxtUserName_Leave(object sender, System.EventArgs e)
+        private void TxtUserName_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtUserName.Text))
             {
@@ -60,17 +61,17 @@ namespace KeLi.FlatDesign.WinForm.Example1
             }
         }
 
-        private void TxtPwd_Enter(object sender, System.EventArgs e)
+        private void TxtPwd_Enter(object sender, EventArgs e)
         {
             if (txtPwd.Text == txtPwd.Tag.ToString())
             {
                 txtPwd.Text = string.Empty;
-                txtPwd.ForeColor = Color.LightGray;
+                txtPwd.ForeColor = Color.White;
                 txtPwd.UseSystemPasswordChar = true;
             }
         }
 
-        private void TxtPwd_Leave(object sender, System.EventArgs e)
+        private void TxtPwd_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtPwd.Text))
             {

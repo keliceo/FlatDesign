@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace KeLi.FlatDesign.WinForm.Example1
+namespace KeLi.FlatDesign.WinForm.Example2
 {
     internal static class Program
     {
@@ -10,7 +10,7 @@ namespace KeLi.FlatDesign.WinForm.Example1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginFrm());
+            Application.Run(new MainFrm());
         }
     }
 }

@@ -29,8 +29,7 @@ namespace KeLi.FlatDesign.WinForm.Example1
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlLeft = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.scShape = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lsPwd = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lsUserName = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -39,34 +38,25 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.btnLogin = new System.Windows.Forms.Button();
             this.linkForgetPwd = new System.Windows.Forms.LinkLabel();
             this.labTitlt = new System.Windows.Forms.Label();
-            this.pbMin = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
-            this.pnlLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMin)).BeginInit();
+            this.pbMin = new System.Windows.Forms.PictureBox();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlLeft
+            // pnlLogo
             // 
-            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
-            this.pnlLeft.Controls.Add(this.pbLogo);
-            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(250, 330);
-            this.pnlLeft.TabIndex = 0;
-            this.pnlLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlLeft_MouseDown);
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.Image = global::KeLi.FlatDesign.WinForm.Example1.Properties.Resources.Logo;
-            this.pbLogo.Location = new System.Drawing.Point(45, 80);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(154, 150);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
+            this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(182)))));
+            this.pnlLogo.Controls.Add(this.pbLogo);
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(250, 330);
+            this.pnlLogo.TabIndex = 0;
+            this.pnlLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlLeft_MouseDown);
             // 
             // scShape
             // 
@@ -108,8 +98,8 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(408, 20);
             this.txtUserName.TabIndex = 1;
-            this.txtUserName.Tag = "User Name";
-            this.txtUserName.Text = "User Name";
+            this.txtUserName.Tag = "Please input user name";
+            this.txtUserName.Text = "Please input user name";
             this.txtUserName.Enter += new System.EventHandler(this.TxtUserName_Enter);
             this.txtUserName.Leave += new System.EventHandler(this.TxtUserName_Leave);
             // 
@@ -123,8 +113,8 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(408, 20);
             this.txtPwd.TabIndex = 2;
-            this.txtPwd.Tag = "Password";
-            this.txtPwd.Text = "Password";
+            this.txtPwd.Tag = "Please input password";
+            this.txtPwd.Text = "Please input password";
             this.txtPwd.Enter += new System.EventHandler(this.TxtPwd_Enter);
             this.txtPwd.Leave += new System.EventHandler(this.TxtPwd_Leave);
             // 
@@ -169,6 +159,18 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.labTitlt.TabIndex = 5;
             this.labTitlt.Text = "LOGIN";
             // 
+            // pbClose
+            // 
+            this.pbClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbClose.Image = global::KeLi.FlatDesign.WinForm.Example1.Properties.Resources.Close;
+            this.pbClose.Location = new System.Drawing.Point(761, 3);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(16, 16);
+            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClose.TabIndex = 6;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.PbClose_Click);
+            // 
             // pbMin
             // 
             this.pbMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -181,17 +183,15 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.pbMin.TabStop = false;
             this.pbMin.Click += new System.EventHandler(this.PbMin_Click);
             // 
-            // pbClose
+            // pbLogo
             // 
-            this.pbClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbClose.Image = global::KeLi.FlatDesign.WinForm.Example1.Properties.Resources.Close;
-            this.pbClose.Location = new System.Drawing.Point(761, 3);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(16, 16);
-            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClose.TabIndex = 6;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.PbClose_Click);
+            this.pbLogo.Image = global::KeLi.FlatDesign.WinForm.Example1.Properties.Resources.Logo;
+            this.pbLogo.Location = new System.Drawing.Point(45, 80);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(154, 150);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
             // LoginFrm
             // 
@@ -206,7 +206,7 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.pnlLeft);
+            this.Controls.Add(this.pnlLogo);
             this.Controls.Add(this.scShape);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -215,10 +215,10 @@ namespace KeLi.FlatDesign.WinForm.Example1
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LoginFrm_MouseDown);
-            this.pnlLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMin)).EndInit();
+            this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,7 +226,7 @@ namespace KeLi.FlatDesign.WinForm.Example1
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlLeft;
+        private System.Windows.Forms.Panel pnlLogo;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer scShape;
         private Microsoft.VisualBasic.PowerPacks.LineShape lsPwd;
         private Microsoft.VisualBasic.PowerPacks.LineShape lsUserName;
