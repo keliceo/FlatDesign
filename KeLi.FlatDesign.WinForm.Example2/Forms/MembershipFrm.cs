@@ -6,7 +6,7 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
 {
     public partial class MembershipFrm : SubFrm
     {
-        public MembershipFrm(Panel pnl) : base(pnl)
+        public MembershipFrm(Panel parent) : base(parent)
         {
             InitializeComponent();
         }

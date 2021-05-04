@@ -8,7 +8,7 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
 {
     public partial class CustomersFrm : SubFrm
     {
-        public CustomersFrm(Panel pnl) : base(pnl)
+        public CustomersFrm(Panel parent) : base(parent)
         {
             InitializeComponent();
         }

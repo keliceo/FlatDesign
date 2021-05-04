@@ -10,7 +10,7 @@ namespace KeLi.FlatDesign.WinForm.UI
         }
 
         protected SubFrm(Panel parent) : this()
-        { 
+        {
             // ReSharper disable once VirtualMemberCallInConstructor
             Dock = DockStyle.Fill;
 

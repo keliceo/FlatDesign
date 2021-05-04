@@ -6,7 +6,7 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
 {
     public partial class DevicesFrm : SubFrm
     {
-        public DevicesFrm(Panel pnl) : base(pnl)
+        public DevicesFrm(Panel parent) : base(parent)
         {
             InitializeComponent();
         }

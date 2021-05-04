@@ -6,7 +6,7 @@ namespace KeLi.FlatDesign.WinForm.Example2.Forms
 {
     public partial class DashboardFrm : SubFrm
     {
-        public DashboardFrm(Panel pnl) : base(pnl)
+        public DashboardFrm(Panel parent) : base(parent)
         {
             InitializeComponent();
         }

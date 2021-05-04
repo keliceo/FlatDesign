@@ -101,10 +101,10 @@ namespace KeLi.FlatDesign.WinForm.Example2
             if (Size == maxSize)
             {
                 Size = MinimumSize;
-                
-                var spaceSize = new Size(maxSize.Width-MinimumSize.Width, maxSize.Height - MinimumSize.Height);
 
-                Location = new Point(spaceSize.Width/2, spaceSize.Height / 2);
+                var spaceSize = new Size(maxSize.Width - MinimumSize.Width, maxSize.Height - MinimumSize.Height);
+
+                Location = new Point(spaceSize.Width / 2, spaceSize.Height / 2);
             }
 
             else
@@ -117,12 +117,6 @@ namespace KeLi.FlatDesign.WinForm.Example2
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        public void ShowDefaultContent(bool flag)
-        {
-            pbContentLogo.Visible = flag;
-            lblDefaultTxt.Visible = flag;
         }
 
         private void BtnMenu_Click(object sender, EventArgs e)
