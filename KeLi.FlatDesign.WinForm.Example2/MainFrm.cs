@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 using KeLi.FlatDesign.WinForm.Example2.Forms;
@@ -50,6 +51,16 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void BtnDashboard_Click(object sender, EventArgs e)
         {
+            var frm = new ProgressBarFrm(10000);
+
+            frm.Show();
+
+            for (var i = 0; i <= 10; i++)
+            {
+                frm.UpdateProgress(1000 * i); 
+                Thread.Sleep(1000);
+            }
+
             pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
 
             new DashboardFrm(pnlContent).Show();

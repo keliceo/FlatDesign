@@ -40,7 +40,7 @@ namespace KeLi.FlatDesign.WinForm.UI
             this.pnlProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
             this.pnlProgress.Location = new System.Drawing.Point(30, 52);
             this.pnlProgress.Name = "pnlProgress";
-            this.pnlProgress.Size = new System.Drawing.Size(60, 5);
+            this.pnlProgress.Size = new System.Drawing.Size(100, 5);
             this.pnlProgress.TabIndex = 9;
             // 
             // lblTitle
@@ -53,6 +53,7 @@ namespace KeLi.FlatDesign.WinForm.UI
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(83, 21);
             this.lblTitle.TabIndex = 10;
+            this.lblTitle.Tag = "";
             this.lblTitle.Text = "Loading...";
             // 
             // lblProgress
@@ -63,9 +64,9 @@ namespace KeLi.FlatDesign.WinForm.UI
             this.lblProgress.ForeColor = System.Drawing.Color.White;
             this.lblProgress.Location = new System.Drawing.Point(338, 44);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(124, 21);
+            this.lblProgress.Size = new System.Drawing.Size(115, 21);
             this.lblProgress.TabIndex = 10;
-            this.lblProgress.Text = "20,000/100,000";
+            this.lblProgress.Text = "10,000/30,000";
             // 
             // pnlBorder
             // 
