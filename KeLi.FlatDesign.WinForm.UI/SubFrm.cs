@@ -4,7 +4,7 @@ namespace KeLi.FlatDesign.WinForm.UI
 {
     public partial class SubFrm : Form
     {
-        protected SubFrm()
+        private SubFrm()
         {
             InitializeComponent();
         }

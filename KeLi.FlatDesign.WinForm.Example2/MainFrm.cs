@@ -13,6 +13,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
         public MainFrm()
         {
             InitializeComponent();
+
         }
 
         private void PnlMenu_MouseDown(object sender, MouseEventArgs e)
