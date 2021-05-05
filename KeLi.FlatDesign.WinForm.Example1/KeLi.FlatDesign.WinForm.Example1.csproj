@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.png</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic.PowerPacks">
       <HintPath>..\..\KeLi.Libs\Microsoft.VisualBasic.PowerPacks.3.0\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
@@ -97,6 +100,9 @@
       <Project>{E81B1764-5143-40EC-976B-BB0C884ABB3F}</Project>
       <Name>KeLi.FlatDesign.WinForm.UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
