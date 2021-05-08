@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace KeLi.FlatDesign.WinForm.UI
 {
@@ -15,7 +16,7 @@ namespace KeLi.FlatDesign.WinForm.UI
             InitializeComponent();
         }
 
-        public ProgressBarFrm(int totalNum, string loadingTitle = null, string completeTitle = null): this()
+        public ProgressBarFrm(Form parent, int totalNum, string loadingTitle = null, string completeTitle = null): this()
         {
             _totalNum = totalNum;
 
@@ -23,6 +24,9 @@ namespace KeLi.FlatDesign.WinForm.UI
                 lblTitle.Text = loadingTitle;
 
             _completeTitle = completeTitle;
+
+            Visible = true;
+            this.ComputeLocation(parent);
         }
 
         public void UpdateProgress(int completedNum)

@@ -83,9 +83,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlMenu.Controls.Add(this.btnCustomers);
             this.pnlMenu.Controls.Add(this.btnDashboard);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 43);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 40);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(230, 757);
+            this.pnlMenu.Size = new System.Drawing.Size(230, 460);
             this.pnlMenu.TabIndex = 0;
             this.pnlMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlMenu_MouseDown);
             // 
@@ -94,9 +94,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlMembershipMenu.Controls.Add(this.btnMembershipItem3);
             this.pnlMembershipMenu.Controls.Add(this.btnMembershipItem2);
             this.pnlMembershipMenu.Controls.Add(this.btnMembershipItem1);
-            this.pnlMembershipMenu.Location = new System.Drawing.Point(1, 200);
+            this.pnlMembershipMenu.Location = new System.Drawing.Point(1, 185);
             this.pnlMembershipMenu.Name = "pnlMembershipMenu";
-            this.pnlMembershipMenu.Size = new System.Drawing.Size(226, 140);
+            this.pnlMembershipMenu.Size = new System.Drawing.Size(226, 129);
             this.pnlMembershipMenu.TabIndex = 3;
             // 
             // btnMembershipItem3
@@ -110,9 +110,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMembershipItem3.ForeColor = System.Drawing.Color.Silver;
             this.btnMembershipItem3.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Membership;
             this.btnMembershipItem3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMembershipItem3.Location = new System.Drawing.Point(28, 95);
+            this.btnMembershipItem3.Location = new System.Drawing.Point(28, 88);
             this.btnMembershipItem3.Name = "btnMembershipItem3";
-            this.btnMembershipItem3.Size = new System.Drawing.Size(196, 40);
+            this.btnMembershipItem3.Size = new System.Drawing.Size(196, 37);
             this.btnMembershipItem3.TabIndex = 4;
             this.btnMembershipItem3.Text = "Item3";
             this.btnMembershipItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -129,9 +129,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMembershipItem2.ForeColor = System.Drawing.Color.Silver;
             this.btnMembershipItem2.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Membership;
             this.btnMembershipItem2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMembershipItem2.Location = new System.Drawing.Point(28, 49);
+            this.btnMembershipItem2.Location = new System.Drawing.Point(28, 45);
             this.btnMembershipItem2.Name = "btnMembershipItem2";
-            this.btnMembershipItem2.Size = new System.Drawing.Size(196, 40);
+            this.btnMembershipItem2.Size = new System.Drawing.Size(196, 37);
             this.btnMembershipItem2.TabIndex = 4;
             this.btnMembershipItem2.Text = "Item2";
             this.btnMembershipItem2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -150,7 +150,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMembershipItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMembershipItem1.Location = new System.Drawing.Point(26, 3);
             this.btnMembershipItem1.Name = "btnMembershipItem1";
-            this.btnMembershipItem1.Size = new System.Drawing.Size(196, 40);
+            this.btnMembershipItem1.Size = new System.Drawing.Size(196, 37);
             this.btnMembershipItem1.TabIndex = 4;
             this.btnMembershipItem1.Text = "Item1";
             this.btnMembershipItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -166,7 +166,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMenu.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Menu2;
             this.btnMenu.Location = new System.Drawing.Point(188, 6);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(32, 32);
+            this.btnMenu.Size = new System.Drawing.Size(32, 30);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
@@ -182,9 +182,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnUsers.ForeColor = System.Drawing.Color.Silver;
             this.btnUsers.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.User;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(1, 437);
+            this.btnUsers.Location = new System.Drawing.Point(1, 403);
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(226, 40);
+            this.btnUsers.Size = new System.Drawing.Size(226, 37);
             this.btnUsers.TabIndex = 0;
             this.btnUsers.Text = "Users";
             this.btnUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -202,9 +202,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnDevices.ForeColor = System.Drawing.Color.Silver;
             this.btnDevices.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Devices;
             this.btnDevices.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevices.Location = new System.Drawing.Point(1, 391);
+            this.btnDevices.Location = new System.Drawing.Point(1, 361);
             this.btnDevices.Name = "btnDevices";
-            this.btnDevices.Size = new System.Drawing.Size(226, 40);
+            this.btnDevices.Size = new System.Drawing.Size(226, 37);
             this.btnDevices.TabIndex = 0;
             this.btnDevices.Text = "Devices";
             this.btnDevices.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -222,9 +222,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnPlans.ForeColor = System.Drawing.Color.Silver;
             this.btnPlans.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Planes;
             this.btnPlans.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlans.Location = new System.Drawing.Point(1, 345);
+            this.btnPlans.Location = new System.Drawing.Point(1, 318);
             this.btnPlans.Name = "btnPlans";
-            this.btnPlans.Size = new System.Drawing.Size(226, 40);
+            this.btnPlans.Size = new System.Drawing.Size(226, 37);
             this.btnPlans.TabIndex = 0;
             this.btnPlans.Text = "Plans";
             this.btnPlans.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -242,9 +242,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMembership.ForeColor = System.Drawing.Color.Silver;
             this.btnMembership.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Membership;
             this.btnMembership.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMembership.Location = new System.Drawing.Point(1, 155);
+            this.btnMembership.Location = new System.Drawing.Point(1, 143);
             this.btnMembership.Name = "btnMembership";
-            this.btnMembership.Size = new System.Drawing.Size(226, 40);
+            this.btnMembership.Size = new System.Drawing.Size(226, 37);
             this.btnMembership.TabIndex = 0;
             this.btnMembership.Text = "Membership";
             this.btnMembership.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -262,9 +262,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnCustomers.ForeColor = System.Drawing.Color.Silver;
             this.btnCustomers.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Customers;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomers.Location = new System.Drawing.Point(1, 109);
+            this.btnCustomers.Location = new System.Drawing.Point(1, 101);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(226, 40);
+            this.btnCustomers.Size = new System.Drawing.Size(226, 37);
             this.btnCustomers.TabIndex = 0;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -282,9 +282,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnDashboard.ForeColor = System.Drawing.Color.Silver;
             this.btnDashboard.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Dashboard;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(1, 63);
+            this.btnDashboard.Location = new System.Drawing.Point(1, 58);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(226, 40);
+            this.btnDashboard.Size = new System.Drawing.Size(226, 37);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -302,7 +302,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(900, 43);
+            this.pnlTitle.Size = new System.Drawing.Size(800, 40);
             this.pnlTitle.TabIndex = 1;
             this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlTitle_MouseDown);
             // 
@@ -314,9 +314,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.Silver;
             this.btnClose.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Close;
-            this.btnClose.Location = new System.Drawing.Point(863, 5);
+            this.btnClose.Location = new System.Drawing.Point(763, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 32);
+            this.btnClose.Size = new System.Drawing.Size(32, 30);
             this.btnClose.TabIndex = 2;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
@@ -329,9 +329,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMax.ForeColor = System.Drawing.Color.Silver;
             this.btnMax.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Maximize3;
-            this.btnMax.Location = new System.Drawing.Point(825, 5);
+            this.btnMax.Location = new System.Drawing.Point(725, 5);
             this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(32, 32);
+            this.btnMax.Size = new System.Drawing.Size(32, 30);
             this.btnMax.TabIndex = 2;
             this.btnMax.UseVisualStyleBackColor = true;
             this.btnMax.Click += new System.EventHandler(this.BtnMax_Click);
@@ -344,9 +344,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.ForeColor = System.Drawing.Color.Silver;
             this.btnMin.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Minimize1;
-            this.btnMin.Location = new System.Drawing.Point(787, 5);
+            this.btnMin.Location = new System.Drawing.Point(687, 5);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(32, 32);
+            this.btnMin.Size = new System.Drawing.Size(32, 30);
             this.btnMin.TabIndex = 2;
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.BtnMin_Click);
@@ -356,7 +356,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(43, 13);
+            this.lblTitle.Location = new System.Drawing.Point(43, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(88, 16);
             this.lblTitle.TabIndex = 1;
@@ -367,7 +367,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pictureBox1.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.SatelliteDish1;
             this.pictureBox1.Location = new System.Drawing.Point(5, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -380,9 +380,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlUser.Controls.Add(this.lblName);
             this.pnlUser.Controls.Add(this.pbUser);
             this.pnlUser.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUser.Location = new System.Drawing.Point(230, 700);
+            this.pnlUser.Location = new System.Drawing.Point(230, 408);
             this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(670, 100);
+            this.pnlUser.Size = new System.Drawing.Size(570, 92);
             this.pnlUser.TabIndex = 2;
             this.pnlUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlUser_MouseDown);
             // 
@@ -390,11 +390,11 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.LightGray;
-            this.lblTime.Location = new System.Drawing.Point(422, 8);
+            this.lblTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Location = new System.Drawing.Point(330, 7);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(215, 60);
+            this.lblTime.Size = new System.Drawing.Size(170, 48);
             this.lblTime.TabIndex = 5;
             this.lblTime.Text = "21:49:45";
             // 
@@ -402,20 +402,20 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(430, 74);
+            this.lblDate.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblDate.ForeColor = System.Drawing.Color.Silver;
+            this.lblDate.Location = new System.Drawing.Point(336, 64);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(236, 21);
+            this.lblDate.Size = new System.Drawing.Size(106, 22);
             this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "Lunes, 26 de septiembre 2018";
+            this.lblDate.Text = "2021/01/01";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(93, 39);
+            this.lblAddress.Location = new System.Drawing.Point(93, 36);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(59, 16);
             this.lblAddress.TabIndex = 1;
@@ -426,7 +426,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(93, 19);
+            this.lblName.Location = new System.Drawing.Point(93, 18);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(45, 16);
             this.lblName.TabIndex = 1;
@@ -435,9 +435,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // pbUser
             // 
             this.pbUser.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Profile2;
-            this.pbUser.Location = new System.Drawing.Point(21, 19);
+            this.pbUser.Location = new System.Drawing.Point(21, 18);
             this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(65, 65);
+            this.pbUser.Size = new System.Drawing.Size(65, 60);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbUser.TabIndex = 0;
             this.pbUser.TabStop = false;
@@ -447,9 +447,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.pnlContent.Controls.Add(this.lblDefaultTxt);
             this.pnlContent.Controls.Add(this.pbContentLogo);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(230, 43);
+            this.pnlContent.Location = new System.Drawing.Point(230, 40);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(670, 657);
+            this.pnlContent.Size = new System.Drawing.Size(570, 368);
             this.pnlContent.TabIndex = 3;
             this.pnlContent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlContent_MouseDown);
             // 
@@ -459,7 +459,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.lblDefaultTxt.AutoSize = true;
             this.lblDefaultTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDefaultTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblDefaultTxt.Location = new System.Drawing.Point(182, 397);
+            this.lblDefaultTxt.Location = new System.Drawing.Point(132, 247);
             this.lblDefaultTxt.Name = "lblDefaultTxt";
             this.lblDefaultTxt.Size = new System.Drawing.Size(325, 39);
             this.lblDefaultTxt.TabIndex = 3;
@@ -469,9 +469,9 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             this.pbContentLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbContentLogo.Image = global::KeLi.FlatDesign.WinForm.Example2.Properties.Resources.Default;
-            this.pbContentLogo.Location = new System.Drawing.Point(232, 245);
+            this.pbContentLogo.Location = new System.Drawing.Point(182, 107);
             this.pbContentLogo.Name = "pbContentLogo";
-            this.pbContentLogo.Size = new System.Drawing.Size(225, 146);
+            this.pbContentLogo.Size = new System.Drawing.Size(225, 135);
             this.pbContentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbContentLogo.TabIndex = 2;
             this.pbContentLogo.TabStop = false;
@@ -494,10 +494,10 @@ namespace KeLi.FlatDesign.WinForm.Example2
             // 
             // MainFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(900, 800);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlUser);
             this.Controls.Add(this.pnlMenu);
@@ -505,9 +505,8 @@ namespace KeLi.FlatDesign.WinForm.Example2
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(900, 500);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "MainFrm";
-            this.Opacity = 0.95D;
             this.pnlMenu.ResumeLayout(false);
             this.pnlMembershipMenu.ResumeLayout(false);
             this.pnlTitle.ResumeLayout(false);

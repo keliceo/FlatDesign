@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -50,9 +51,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void BtnDashboard_Click(object sender, EventArgs e)
         {
-            var frm = new ProgressBarFrm(10000);
-
-            frm.Show();
+            var frm = new ProgressBarFrm(this, 10000);
 
             for (var i = 0; i <= 10; i++)
             {
@@ -98,7 +97,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
             if (dlg == DialogResult.Cancel)
                 return;
-
+            
             pnlContent.Controls.OfType<Form>().ToList().ForEach(pnlContent.Controls.Remove);
 
             new PlansFrm(pnlContent).Show();
@@ -123,6 +122,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             WindowState = FormWindowState.Minimized;
         }
 
+
         private void BtnMax_Click(object sender, EventArgs e)
         {
             var maxSize = this.GetWorkingAreaSize();
@@ -131,9 +131,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
             {
                 Size = MinimumSize;
 
-                var spaceSize = new Size(maxSize.Width - MinimumSize.Width, maxSize.Height - MinimumSize.Height);
-
-                Location = new Point(spaceSize.Width / 2, spaceSize.Height / 2);
+                this.ComputeLocation(maxSize);
             }
 
             else
@@ -169,7 +167,7 @@ namespace KeLi.FlatDesign.WinForm.Example2
 
         private void TmrTime_Tick(object sender, EventArgs e)
         {
-            lblDate.Text = DateTime.Now.ToLongDateString();
+            lblDate.Text = DateTime.Now.ToString("yyyy/MM/dd");
             lblTime.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
 

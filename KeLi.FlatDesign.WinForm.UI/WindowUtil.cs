@@ -43,5 +43,42 @@ namespace KeLi.FlatDesign.WinForm.UI
 
             return new Size(rect.Width, rect.Height);
         }
+
+        public static void ComputeLocation(this Form current, Form parent)
+        {
+            if (current == null)
+                throw new ArgumentNullException(nameof(current));
+
+            if (current.IsDisposed)
+                throw new ObjectDisposedException(nameof(current));
+
+            if (parent == null)
+                throw new ArgumentNullException(nameof(parent));
+
+            if (parent.IsDisposed)
+                throw new ObjectDisposedException(nameof(parent));
+
+            current.ComputeLocation(parent.Size, parent.Location);
+        }
+
+        public static void ComputeLocation(this Form currentFrm, Size parentSize, Point parentLocation = default)
+        {
+            if (currentFrm == null)
+                throw new ArgumentNullException(nameof(currentFrm));
+
+            if (currentFrm.IsDisposed)
+                throw new ObjectDisposedException(nameof(currentFrm));
+
+            if (parentSize == default)
+                throw new ArgumentNullException(nameof(parentSize));
+
+            if (parentLocation == default)
+                parentLocation = new Point(0, 0);
+
+            var currentSize = currentFrm.Size;
+            var spaceSize = new Size(parentSize.Width - currentSize.Width, parentSize.Height - currentSize.Height);
+
+            currentFrm.Location = new Point(parentLocation.X + spaceSize.Width / 2, parentLocation.Y + spaceSize.Height / 2);
+        }
     }
 }
