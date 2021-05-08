@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
+using KeLi.FlatDesign.WinForm.UI.Utils;
+
 namespace KeLi.FlatDesign.WinForm.UI
 {
     public partial class ProgressBarFrm : BaseFrm

@@ -41,11 +41,11 @@ namespace KeLi.FlatDesign.WinForm.UI
             this.txtMessage.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMessage.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtMessage.ForeColor = System.Drawing.Color.White;
-            this.txtMessage.Location = new System.Drawing.Point(12, 11);
+            this.txtMessage.Location = new System.Drawing.Point(12, 12);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.ReadOnly = true;
-            this.txtMessage.Size = new System.Drawing.Size(366, 71);
+            this.txtMessage.Size = new System.Drawing.Size(366, 77);
             this.txtMessage.TabIndex = 2;
             this.txtMessage.TabStop = false;
             this.txtMessage.Text = "Do you know about China history?";
@@ -59,9 +59,9 @@ namespace KeLi.FlatDesign.WinForm.UI
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(303, 112);
+            this.btnCancel.Location = new System.Drawing.Point(303, 121);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 28);
+            this.btnCancel.Size = new System.Drawing.Size(75, 30);
             this.btnCancel.TabIndex = 0;
             this.btnCancel.TabStop = false;
             this.btnCancel.Text = "Cancel";
@@ -77,9 +77,9 @@ namespace KeLi.FlatDesign.WinForm.UI
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(222, 112);
+            this.btnOk.Location = new System.Drawing.Point(222, 121);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 28);
+            this.btnOk.Size = new System.Drawing.Size(75, 30);
             this.btnOk.TabIndex = 0;
             this.btnOk.TabStop = false;
             this.btnOk.Text = "OK";
@@ -88,10 +88,10 @@ namespace KeLi.FlatDesign.WinForm.UI
             // 
             // MessageBoxFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(151)))), ((int)(((byte)(180)))));
-            this.ClientSize = new System.Drawing.Size(390, 150);
+            this.ClientSize = new System.Drawing.Size(390, 163);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);

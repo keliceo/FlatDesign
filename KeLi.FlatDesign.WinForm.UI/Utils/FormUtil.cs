@@ -3,9 +3,9 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace KeLi.FlatDesign.WinForm.UI
+namespace KeLi.FlatDesign.WinForm.UI.Utils
 {
-    public static class WindowUtil
+    public static class FormUtil
     {
         private const int HTCAPTION = 2;
 

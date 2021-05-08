@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 using KeLi.FlatDesign.WinForm.Example2.Forms;
 using KeLi.FlatDesign.WinForm.UI;
+using KeLi.FlatDesign.WinForm.UI.Utils;
 
 namespace KeLi.FlatDesign.WinForm.Example2
 {

@@ -73,8 +73,8 @@
     <Compile Include="SubFrm.Designer.cs">
       <DependentUpon>SubFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="User32Importer.cs" />
-    <Compile Include="WindowUtil.cs" />
+    <Compile Include="Utils\User32Importer.cs" />
+    <Compile Include="Utils\FormUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BaseFrm.resx">
@@ -97,5 +97,6 @@
   <ItemGroup>
     <None Include="Resources\Close.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

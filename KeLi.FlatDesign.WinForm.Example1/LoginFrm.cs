@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using KeLi.FlatDesign.WinForm.UI;
+using KeLi.FlatDesign.WinForm.UI.Utils;
 
 namespace KeLi.FlatDesign.WinForm.Example1
 {
